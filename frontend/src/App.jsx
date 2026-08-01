@@ -87,7 +87,7 @@ function RadarRing({ score, phase }) {
     </div>
   )
 }
-
+const API_URL = import.meta.env.VITE_API_URL || ''
 export default function App() {
   const [email, setEmail] = useState('')
   const [phase, setPhase] = useState('idle') // idle | scanning | done
@@ -108,7 +108,7 @@ export default function App() {
 
     let data
     try {
-      const res = await fetch('/api/analyze', {
+      const res = await fetch('${API_URL}/api/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
