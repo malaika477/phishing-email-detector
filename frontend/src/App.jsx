@@ -108,7 +108,7 @@ export default function App() {
 
     let data
     try {
-      const res = await fetch('${API_URL}/api/analyze', {
+      const res = await fetch(`${API_URL}/api/analyze`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
