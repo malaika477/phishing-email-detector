@@ -108,9 +108,6 @@ Response:
   Logistic Regression) on a Kaggle phishing email dataset with
   pandas + scikit-learn, and add a second `/api/analyze/ml` endpoint
   to compare rule-based vs. ML verdicts.
-- **Phase 6 — Deployment:** deploy `frontend/` to Vercel and `backend/`
-  to Render (or similar). Set the frontend's API base URL via an
-  environment variable instead of the dev-only Vite proxy.
 
 ## Disclaimer
 
